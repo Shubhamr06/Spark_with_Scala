@@ -18,7 +18,7 @@ object defaultPARTITION {
     val df1=df.groupBy("Category").count()
     df1.show()
     val part1=df1.rdd.getNumPartitions
-    println(part1) // now checking number of partition after doing transformations.
+    println(part1) // now checking number of partition after doing transformations&Actions.
 
     //spark shuffle properties in use
 
